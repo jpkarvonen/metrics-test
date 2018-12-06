@@ -25,7 +25,14 @@
         <%= link_to "Sign In", new_user_session_path, :class => 'navbar-link'  %>
       <% end %>
 
+      <% if flash.alert %>
+        <div id=”error_explanation”>
+          <h3><%= flash.alert %></h3>
+        </div>
+      <% end %>
+
       <%= yield %>
+
     </div>
 
 
