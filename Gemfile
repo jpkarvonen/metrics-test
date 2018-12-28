@@ -81,3 +81,5 @@ gem 'bootstrap-sass'
 gem 'devise'
 
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+
+gem "chartkick"

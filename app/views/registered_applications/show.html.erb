@@ -7,14 +7,9 @@
   </div>
 
 
-<div class="col-md-8">
-    <h3>Events</h3>
-      <% @events.each do |k,v| %>
-        <ul>
-          <li>Event Type: <%= k %></li>
-          <li>Count: <%= v %></li>
-        </ul>
-      <% end %>
+  <div class="col-md-8">
+    <h3>Events Graph</h3>
+      <%= pie_chart @events %>
   </div>
 
 
